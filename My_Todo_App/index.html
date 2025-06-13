@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+  </head>
+  <body class="">
+    <div class="toggle-container">
+      <input type="checkbox" id="toggle" />
+      <label for="toggle" class="toggle-label"></label>
+      <h3 id="mode">light mode on</h3>
+    </div>
+    <div class="container">
+      <h1>Todo List</h1>
+      <form id="form">
+        <input
+          type="text"
+          class="input"
+          id="input"
+          placeholder="Enter your todo"
+          autocomplete="off"
+        />
+      </form>
+      <small
+        >Press 'Enter' key to add todo. <br />Left click to toggle completed.
+        <br />
+        Right click to delete todo</small
+      >
+      <div class="todo-container">
+        <ul class="todos" id="todos"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
